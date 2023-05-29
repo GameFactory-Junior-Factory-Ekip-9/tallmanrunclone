@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - "b\xFCy\xFCt\xFClmesigerekenobjeler"
+  - kol
+  - bacak
+  - jumper
+  - ground
+  - elmas
+  - betterjumper
+  - barrier
+  - longbarrier
+  - boss
+  - "\xE7arpan"
   layers:
   - Default
   - TransparentFX
