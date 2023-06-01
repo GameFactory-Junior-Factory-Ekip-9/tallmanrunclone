@@ -45,7 +45,7 @@ public class Canvascontrol : MonoBehaviour
         settingspage.SetActive(false);
         winpage.SetActive(true);
         karakter.GetComponent<stats>().elmassayýsý += toplananelmassayýsý * karakter.GetComponent<stats>().çarpan;
-        winpageelmassayýsý.GetComponent<TextMeshProUGUI>().text = ":"+(toplananelmassayýsý* karakter.GetComponent<stats>().çarpan).ToString();
+        winpageelmassayýsý.GetComponent<TextMeshProUGUI>().text = ":"+(toplananelmassayýsý* karakter.GetComponent<stats>().çarpan).ToString("0");
         PlayerPrefs.SetFloat("elmassayýsý", karakter.GetComponent<stats>().elmassayýsý);
     }
     public void openlosepage() {

@@ -12,12 +12,19 @@ public class stats : MonoBehaviour
     public float songeniþlik;
     bool isfinished;
     public float çarpan;
-    
+    public bool winpageopened;
+
     private void Update()
     {
+        
         if (uzunluk < 45||geniþlik<=0)
         {
-            if (this.gameObject.GetComponent<koþmaveanimasyon>().isfinishing == true){Invoke("kazanmaekranýaçma",3);}
+            if (this.gameObject.GetComponent<koþmaveanimasyon>().isfinishing == true){
+
+
+                if (!winpageopened) {Invoke("kazanmaekranýaçma",3); winpageopened = true; }
+                
+            }
             else { Invoke("kaybetmeekranýaçma", 3); }
                 if (!isfinished)
             {
